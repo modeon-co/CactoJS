@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Microframework para desenvolvimento de apps com Cordova",
   "main": "js/cacto.js",
-  "repository": "https://github.com/modeon-co/CactoJS",
+  "repository": {
+    "url":"https://github.com/modeon-co/CactoJS",
+    "type": "git"
+  },
   "author": "Modeon Devhouse <contato@modoen.co>",
   "license": "GPL-3.0",
   "dependencies": {
