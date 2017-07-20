@@ -14,7 +14,11 @@ Microframework para desenvolvimento mobile com Cordova. O CactoJS é um projeto 
 
     $ yarn global add gulp
 
-### 3. Execute o Gulp
+### 3. Execute o Yarn
+
+    $ yarn
+
+### 4. Execute o Gulp
 
     $ gulp
 
