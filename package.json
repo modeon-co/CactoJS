@@ -1,0 +1,16 @@
+{
+  "name": "CactoJS",
+  "version": "1.0.0",
+  "description": "Microframework para desenvolvimento de apps com Cordova",
+  "main": "js/cacto.js",
+  "repository": "https://github.com/modeon-co/CactoJS",
+  "author": "Modeon Devhouse <contato@modoen.co>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1"
+  }
+}
