@@ -2,6 +2,10 @@
 
 Microframework para desenvolvimento mobile com Cordova. O CactoJS é um projeto que nasceu do [Lealjs](https://github.com/denissonleal/lealjs).
 
+## Instalação com yarn
+
+    $ yarn add cactojs
+
 ## Instalação para desenvolvimento do CactoJS
 
 ### 1. Instale o Yarn
