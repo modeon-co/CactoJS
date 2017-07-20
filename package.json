@@ -1,10 +1,10 @@
 {
-  "name": "CactoJS",
-  "version": "1.0.0",
+  "name": "cactojs",
+  "version": "1.0.1",
   "description": "Microframework para desenvolvimento de apps com Cordova",
   "main": "js/cacto.js",
   "repository": {
-    "url":"https://github.com/modeon-co/CactoJS",
+    "url": "https://github.com/modeon-co/CactoJS",
     "type": "git"
   },
   "author": "Modeon Devhouse <contato@modoen.co>",
