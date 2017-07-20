@@ -24,7 +24,7 @@ var initial_hash = "index";
 $.view = function(name, done) {
   name = name.replace("#", "").replace(".", "/");
   $.ajax({
-    url: "app/views/" + name + ".html",
+    url: "cacto/views/" + name + ".html",
     type: "GET",
     dataType: "html",
     success: function(data) {
@@ -43,7 +43,7 @@ $.view = function(name, done) {
 $.controller = function(name) {
   var name = name.replace("#", "").replace(".", "/");
   $.ajax({
-    url: "app/controllers/" + name + ".js",
+    url: "cacto/controllers/" + name + ".js",
     type: "GET",
     dataType: "script",
     error: function() {
