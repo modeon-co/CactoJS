@@ -17,6 +17,13 @@ var current_page = "";
 var initial_hash = "index";
 
 /**
+ * Necessário para não se carregar páginas de forma duplicada
+ * @type {Boolean}
+ */
+var loading = false;
+
+
+/**
  * Carrega os arquivos de views na página principal
  * @param  {[type]}   name - Nome da view
  * @param  {Function} done - Função realizada ao carregar a view
@@ -69,12 +76,17 @@ function routes(e) {
 }
 
 function redirect(route) {
+  if (loading) {
+    return;
+  }
+  loading = true;
   var hash = location.hash.replace('#', '');
   route = route.replace('#', '');
   if (route == hash)
     routes();
   else
     location.hash = route;
+  loading = false;
 }
 
 function controller(id, obj) {
