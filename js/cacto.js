@@ -38,7 +38,7 @@ $.view = function(name, done) {
 			$(".app").append(data);
 		},
 		error: function() {
-			$.alert("[$.view] caminho inválido");
+			console.log("[$.view] caminho inválido");
 		}
 	}).done(done);
 };
@@ -226,7 +226,7 @@ $.fn.sendImage = function(success, error) {
 				$(this).closest('form').submit();
 				return;
 			}
-		$.alert("Arquivo inválido!");
+		console.log("Arquivo inválido!");
 	});
 };
 
