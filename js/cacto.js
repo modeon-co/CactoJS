@@ -85,7 +85,7 @@ function redirect(route) {
 	if (route == hash)
 		routes();
 	else
-		location.hash = route;
+		location.hash = "!" + route;
 	loading = false;
 }
 
