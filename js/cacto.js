@@ -29,7 +29,7 @@ var loading = false;
  * @param  {Function} done - Função realizada ao carregar a view
  */
 $.view = function(name, done) {
-	name = name.replace("#", "").replace(".", "/");
+	name = name.replace("#!", "").replace(".", "/");
 	$.ajax({
 		url: "cacto/views/" + name + ".html",
 		type: "GET",
@@ -48,7 +48,7 @@ $.view = function(name, done) {
  * @param  {[type]} name - Nome do controller
  */
 $.controller = function(name) {
-	var name = name.replace("#", "").replace(".", "/");
+	var name = name.replace("#!", "").replace(".", "/");
 	$.ajax({
 		url: "cacto/controllers/" + name + ".js",
 		type: "GET",
@@ -61,7 +61,7 @@ $.controller = function(name) {
 };
 
 function routes(e) {
-	var hash = location.hash.replace('#', '');
+	var hash = location.hash.replace('#!', '');
 	if (!hash.length) {
 		redirect(initial_hash);
 		return false;
@@ -80,8 +80,8 @@ function redirect(route) {
 		return;
 	}
 	loading = true;
-	var hash = location.hash.replace('#', '');
-	route = route.replace('#', '');
+	var hash = location.hash.replace('#!', '');
+	route = route.replace('#!', '');
 	if (route == hash)
 		routes();
 	else
@@ -109,7 +109,7 @@ function initial(hash) {
 }
 
 function argument(i) {
-	var hash = location.hash.replace('#', '').split('/');
+	var hash = location.hash.replace('#!', '').split('/');
 	return (typeof hash[i] == 'undefined' ? null : hash[i]);
 }
 
